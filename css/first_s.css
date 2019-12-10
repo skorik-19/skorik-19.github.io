@@ -1,0 +1,121 @@
+.first{
+    margin: 0px auto;
+    background: url(../image/background_first.jpg)center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+}
+.first_text{
+    text-align: right;
+    flex-basis: 50%; 
+    margin: 20px 0 90px 120px;
+
+}
+.first_text .first_s_title{
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+    font-family: 'Cuprum', sans-serif;
+}
+.first_text p{
+    max-width: 90%;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    font-family: 'Cuprum', sans-serif;
+}
+
+.first_img{
+    flex-basis: calc(100%-50%-40px);
+    display: flex;
+    margin:20px 90px 20px 0;
+    position: relative;
+}
+.first_img img{
+    display: block;
+    position: relative;
+    max-width: 650px;
+    max-height: auto;
+}
+.first_second{
+    text-align: center;
+    height: 15vp;
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+}
+@media(max-width:1400px){
+	.first{
+        margin: 20px auto;
+    }
+    .first_img{
+        margin-right: 30px;
+         flex-basis: auto;
+    }
+}
+@media(max-width:1200px){
+    .first{
+       flex-direction: column;
+    }
+    .first_img{
+        left: 50%;
+        transform: translate(-50%);
+        margin-right: 20%;
+        flex-basis: auto;
+    }
+    .first_text{
+        text-align: center;
+        margin: auto+60px;
+    }
+    .first_text p{
+        flex-basis: auto;
+        margin-right: 60px;
+        max-width: 100%;
+    }
+}
+@media(max-width:960px){
+    .first{
+       flex-direction: column;
+    }
+    .first_img{
+        margin-right: 15%;
+        flex-basis: auto;
+    }
+    .first_img img{
+        display: block;
+        position: relative;
+        max-width: 500px;
+    }
+    .first_text p{
+        flex-basis: auto;
+        margin-right: 60px;
+        max-width: 100%;
+    }
+}
+@media(max-width:660px){
+    .first_img{
+        margin-right: 10%;
+        flex-basis: auto;
+    }
+    .first_img img{
+        display: block;
+        position: relative;
+        max-width: 400px;
+        height: 250px;
+    }
+}
+@media(max-height:320px){
+    .first{
+        flex-direction: column;
+     }
+     .first_img{
+         margin: 0 0 20px 0;
+         flex-basis: auto;
+     }
+     .first_text p{
+         flex-basis: auto;
+         margin-right: 60px;
+         max-width: 100%;
+     }
+ }

@@ -1,0 +1,85 @@
+.third{
+    background: url(../image/background.jpg)center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+.thirds{
+    display: flex;
+    align-items: center;
+    width: 660px;
+    height: auto;
+    background: rgba(255, 0, 0, 0.4);
+    margin: 70px auto 70px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.thirds input[name="usernames"]{
+    margin-top: 20px;
+}
+.thirds input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.thirds label{
+    font-size: 24px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.thirds input{
+    background: rgba(255, 255, 255, 0.7);
+    width: 500px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+.thirds  a{
+    color: white;
+}
+.thirds input[name="submit"]{
+    margin-top: 20px;
+    color: white;
+    width: auto;
+    height: 40px;
+	font-size: 20px;
+    line-height: 26px;
+    border-radius: 5px;
+	padding: 5px 20px;
+	font-weight: 700;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0);
+	text-align: center;	
+}
+.thirds input:hover[name="submit"]{
+    background-color: rgba(255, 0, 0, 0.6);
+    transition: 0.7s all;
+}
+@media(max-width:1200px){
+    .thirds{
+        margin: auto+20px 60px;
+    }
+}
+@media(max-width:780px){
+    .thirds{
+        margin: 20px 60px;
+    }
+    .thirds input{
+        width: 400px;
+    }
+}
+@media(max-width:580px){
+    .thirds input{
+        width: 250px;
+        font-size: 14px;
+    }
+}
+@media(max-width:320px){
+    .thirds input{
+        height: 40px;
+    }
+}
